@@ -1,0 +1,22 @@
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+
+# Users Environment Variables
+.lock-wscript
+
+.DS_Store
+
+# PHPStorm and Netbeans and Sublime Text
+.idea/
+nbproject/
+*.sublime-workspace

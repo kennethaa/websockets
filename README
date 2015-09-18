@@ -1,0 +1,9 @@
+WebSockets
+
+
+Development
+
+1. run npm install
+2. run npm start
+
+3. Open index.html in a browser, and you should be connected to the server

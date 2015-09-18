@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primus</title>
+	<script src="http://localhost:3000/assets/primus.js"></script>
+</head>
+<body>
+	<h1>Primus</h1>
+	<div id="counter"></div>
+	<script>
+		var primus = Primus.connect('http://localhost:3000');
+
+		primus.write('ping');
+
+		primus.on('data', function(data) {
+			console.log(data);
+			document.getElementById('counter').innerHTML = data;
+		});
+
+		primus.on('error', function error(err) {
+  			console.error('Something horrible has happened', err.stack);
+		});
+	</script>
+</body>
+</html>
